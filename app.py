@@ -1,13 +1,13 @@
 import streamlit as st
 import utils
-from tensorflow import keras
+#from tensorflow import keras
 from keras.models import load_model
 
 st.set_page_config(layout="wide")
 
 st.title("Damage Estimation using Satellite Imagery")
 
-model = load_model("model.h5")
+#model = load_model("model.h5")
 
 temp = st.file_uploader("Upload an image", type=[
                         "png", "jpg", "jpeg"])
